@@ -1,0 +1,296 @@
+/* Fonts include */
+@font-face {
+    font-family:'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family:'Montserrat-semiBold';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+@font-face {
+    font-family:'Montserrat-medium';
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+
+/* Color Variable */
+:root{
+    --dark-blue:#000f2b;
+    --yellow:#f7bc4e;
+    --white:#FFFFFF;
+    --high-yellow:#FFCC00;
+}
+.navbar .container-fluid{
+    padding: 0px 65px;
+    z-index: 1111111;
+}
+.bg-dark{
+    background: var(--white) !important;
+}
+.navbar-brand img{
+    max-width: 100px;
+}
+.navbar-dark .navbar-nav .nav-item{
+    line-height: 70px;
+    position: relative;
+    transition: all .2s linear;
+}
+.navbar-dark .navbar-nav .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: var(--yellow);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .1s linear;
+}
+.navbar-dark .navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+.navbar-dark .navbar-nav .nav-item:hover .nav-link{
+    color: var(--yellow) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+font-size: 16px;
+color: var(--dark-blue);
+padding: 0 1em;
+font-family:'Montserrat-medium';
+font-weight: 500;
+
+}
+.navbar-toggler{
+    background: var(--dark-blue);
+}
+
+.navbar .participate-btn{
+    border-style: solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    color: #ffffff;
+    border-color: #003399;
+    background-color: #003399;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    font-family: 'PT Sans',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1em;
+    text-transform: capitalize;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all .2s linear;
+}
+.navbar .participate-btn:hover{
+    background: var(--high-yellow);
+    color: var(--white);
+}
+.navbar-dark .navbar-nav .nav-item .dropdown:hover{
+    .dropdown-menu{
+        display: block;
+        transition: 0.5s;
+    }
+}
+.navbar-dark .navbar-nav .nav-item .dropdown .dropdown-menu{
+    min-width: 14rem !important;
+}
+.navbar-dark .navbar-nav .nav-item .dropdown .dropdown-item{
+    line-height: 33px;
+}
+.navbar-dark .navbar-nav .nav-item .dropdown .dropdown-item:hover{
+    color: var(--yellow);
+    background: transparent !important;
+}
+.shopping-cart{
+    border: 2px solid #003399;
+    padding:7px;
+    border-radius: 3px;
+    margin: 0px 15px;
+    position: relative;
+    display: inline;
+}
+.shopping-cart::before{
+   content: '0';
+   width: 16px;
+   height: 16px;
+   background: #003399;
+   color: white;
+   position: absolute;
+   top: -8px;
+   right: -6px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.shopping-cart i{
+   
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        padding: 0 2px;
+        color: #003399;
+    }
+
+/* Judges Session */
+.judges{
+    background-image: url(../images/judges.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 120px 0px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1111 !important;
+}
+.judges::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 15, 45, 0.5);
+    z-index: 2222 !important;
+    
+    
+
+}
+.judges .main-panel{
+    z-index: 99999 !important;
+}
+.judges h3{
+    font-size: 40px;
+    line-height: 52px;
+    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
+    color: var(--white);
+   
+    
+}
+.judges p{
+    font-size: 23px;
+    line-height: 35px;
+    font-family: 'Montserrat-Regular';
+    font-weight: 400;
+    color: var(--white);
+}
+/* About Judges */
+
+.about-judges .judge-box{
+   border: 7px solid var(--yellow);
+   border-radius: 5px;
+
+}
+.about-judges .text-box h4{
+    font-size: 36px;
+    line-height: 47px;
+    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
+    color: black;
+}
+.about-judges .text-box h5{
+    font-size: 22px;
+    line-height: 31px;
+    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
+    color:#000f2b;
+}
+.about-judges .text-box p{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Montserrat-Regular';
+    font-weight: 400;
+    color: #4b4f58;
+}
+/* Footer Section */
+.footer {
+    background-image: linear-gradient(to right,rgba(0,51,153,0.8),rgba(0,51,153,0.8)),url('../images/nazar-hrabovyi-lIuxlN0zSjs-unsplash-3.jpg');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: auto;
+    background-attachment: scroll;
+   
+    color: white;
+}
+.footer .row{
+    padding: 60px;
+}
+.footer-image {
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+}
+.footer h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
+    color: #ffffff;
+}
+.footer .links ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+.footer .links ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.footer .img-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .f-span{
+    font-size: 30px;
+    line-height: 42px;
+    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
+    color: #ffffff;
+}
+.footer .s-span{
+    font-size: 26px;
+    line-height: 30px;
+    font-family: 'Montserrat-SemiBold';
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -15px;
+}
+.phonenum,.links{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer .social-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .social-links i{
+    font-size: 40px;
+    color: white;
+    margin-left: 30px;
+}
+.copyright{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 400;
+    font-family: 'Montserrat-Regular';
+    color: white;
+
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
